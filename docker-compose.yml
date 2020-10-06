@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  back:
+    build: .
+    restart: unless-stopped
+    container_name: java-test
+    ports:
+      - 8080:8080
